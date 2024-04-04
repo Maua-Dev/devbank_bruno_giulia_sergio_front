@@ -5,7 +5,7 @@ import { ApiContext } from "../../contexts/api-context";
 
 export default function MainPage() {
 
-  const {setName, setAccount, setAgency, setCredito, api, name, account, agency, credito} = useContext(ApiContext)
+  const {setName, setAccount, setAgency, setCredito, api } = useContext(ApiContext)
 
 
   const requestApi = async () => {
