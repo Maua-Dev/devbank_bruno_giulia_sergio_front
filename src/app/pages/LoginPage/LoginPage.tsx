@@ -9,10 +9,12 @@ export default function HomePage() {
 
   const { setApi } = useContext(ApiContext);
 
+  // Alerta para caso a api seja inválida
   const handleClick = () => {
     alert("Endpoint Invalido");
   };
 
+  // Verifica se a api é um link (começa com http)
   const ButtonLink = () => {
     if (inputValue.slice(0, 4) == "http") {
       setApi(inputValue);
@@ -37,12 +39,14 @@ export default function HomePage() {
   return (
     <main className="login_page">
       <div className="container">
+        {/* Logo do DevBank */}
         <img
           className="logo"
           src="https://github.com/Maua-Dev/devbank_playground_front/blob/dev/src/app/presentation/assets/logo_devbank.png?raw=true"
           alt="dev-bank logo"
         ></img>
         <form className="form">
+          {/* Local para input do usuário */}
           <input
             className="input"
             type="string"
@@ -50,6 +54,7 @@ export default function HomePage() {
             placeholder="Coloque aqui o endpoint da sua API"
             onChange={(event) => setInputValue(event.target.value)}
           ></input>
+          {/* Botão para validar a api (redireciona para HomePage) */}
           <ButtonLink></ButtonLink>
         </form>
       </div>
