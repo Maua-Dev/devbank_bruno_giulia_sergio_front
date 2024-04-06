@@ -7,25 +7,30 @@ import { ApiContext } from "../../contexts/api-context";
 export default function HomePage() {
   const [inputValue, setInputValue] = useState("");
 
-  const { setApi, api } = useContext(ApiContext)
+  const { setApi } = useContext(ApiContext);
 
-  console.log(api)
-  
+  const handleClick = () => {
+    alert("Endpoint Invalido");
+  };
 
   const ButtonLink = () => {
-    console.log(inputValue.trim())
-    if (inputValue.trim() !== "") {
+    if (inputValue.slice(0, 4) == "http") {
       setApi(inputValue);
-      console.log(api)
       return (
-        <Link className="link" to="/HomePage">
+        <Link className="login_link" to="/HomePage">
           <button className="btn" type="submit">
             Entrar
           </button>
         </Link>
       );
     } else {
-      return <button className="btn">Entrar</button>;
+      return (
+        <div>
+          <button className="btn" onClick={handleClick}>
+            Entrar
+          </button>
+        </div>
+      );
     }
   };
 
