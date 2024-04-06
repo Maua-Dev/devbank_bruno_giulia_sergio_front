@@ -12,7 +12,8 @@
 .container {
     display: flex;
     background-color: rgba(0, 115, 230, 0.3);
-    height: 648px;
+    position: relative;
+    height: 72vh;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -21,30 +22,28 @@
 
 .form {
     width: 50%;
-    gap: 80px;
+    gap: 8vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .logo {
-    width: 877px;
-    height: 165px;
     position: relative;
+    width: 52vw;
     top: -70px;
 }
 
 .input {
     border: 2px solid #0121414d;
     border-radius: 10px;
-    width: 1288px;
-    height: 82px;
+    width: 80vw;
+    height: 9.5vh;
     padding: 10px;
     background-color: #0073E64D;
-    color: #0073E6;
     font-size: 36px;
     text-align: center;
-    
+    font-size: 2.8em;
 }
 
 .btn {
@@ -65,10 +64,14 @@
     transform: scale(1.1);
 }
 
-.link {
+.login_link {
     text-decoration: none;
 }
 
-.login_link {
-    text-decoration: none;
+input::placeholder {
+    color: rgb(95, 95, 193);
+}
+
+.alert {
+    font-size: 2vh;
 }
