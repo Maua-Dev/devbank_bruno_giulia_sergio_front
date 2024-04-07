@@ -1,0 +1,29 @@
+button:hover {
+    transform: scale(1);
+}
+
+.link_text {
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+}
+
+.link {
+    display: flex;
+    width: 16vw;
+    height: 40vh;
+    position: relative;
+    background-color: rgb(124, 174, 223);
+    border: 10px solid rgba(210, 222, 233, 0.611);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.link:hover {
+    transform: scale(1.1);
+}
+

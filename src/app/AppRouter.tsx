@@ -12,9 +12,9 @@ export default function AppRouter() {
             <Routes>
                 <Route path="/" element={<LoginPage />} />
                 <Route path="/HomePage" element={<HomePage />}/>
-                <Route path='/DepositPage' element={<DepositPage />}/>
-                <Route path='/WithdrawalPage' element={<WithdrawalPage />}/>
-                <Route path='/Transacao' element={<Transacao />} />
+                <Route path='/HomePage/DepositPage' element={<DepositPage />}/>
+                <Route path='/HomePage/WithdrawalPage' element={<WithdrawalPage />}/>
+                <Route path='/HomePage/Transacao' element={<Transacao />} />
             </Routes>
         </BrowserRouter>
     )

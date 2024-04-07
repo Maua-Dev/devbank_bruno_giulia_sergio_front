@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 115, 230, 1);
+    height: fit-content;
+    height: 14vh;
+    align-items: center;
+    top: 0;
+    justify-content: space-between;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    width: fit-content;
+    width: 16vw;
+    border-radius: 10px;
+    margin: 30vh;
+    color: rgba(0, 115, 230, 1);
+    font-size: 1vw;
+    padding: 12px;
+}
+
+.img {
+    margin: 8vh;
+    width: 46vh;
+}
