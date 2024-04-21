@@ -1,13 +1,13 @@
 .home_page {
-    padding: 100px;
     height: 100%;
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     background-color: white;
 }
+
+
 
 .top_box {
     background-color: rgba(0, 115, 230, 0.25);
@@ -15,7 +15,7 @@
     height: 11vh;
     border-radius: 10px;
     position: relative;
-    top: 3vw;
+    margin-top: 16vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,18 +45,22 @@
 
 .middle {
    position: relative;
-   height: 12vw;
+   /* height: 12vw; */
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-top: 10vw;
-   flex-direction: wrap;
+   /* flex-wrap: wrap; */
 }
 
 .button {
-    position: relative;
-    margin-top: 8vw;
-    background-color: rgba(0, 115, 230, 1);
+    background-color: rgb(110, 169, 228);
+    height: 6vh;
+    width: 8vw;
+    margin: 0.8vw;
+    font-size: 1.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: 0.2s ease-in-out;
 }
 

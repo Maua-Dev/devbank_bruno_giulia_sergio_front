@@ -1,0 +1,80 @@
+.cedula {
+    display: flex;
+    width: 18vw;
+    height: 20vh;
+    position: relative;
+    background-color: rgb(110, 169, 228);
+    border: 10px solid rgba(210, 222, 233, 0.611);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh;
+    transition: 0.2s ease-in-out;
+    margin-bottom: 1.2vh;
+}
+
+.cedula:hover {
+    background-color: rgb(234, 113, 113);
+}
+
+.valor {
+    font-size: 8vh;
+}
+
+.cedula_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cedula_bottom_left {
+    display: flex;
+    width: 10.4vw;
+    height: 6vh;
+    position: relative;
+    background-color: rgb(119, 172, 224);
+    justify-content: center;
+    align-items: center;
+    margin-left: 2vh;
+    border-radius: 10px;
+}
+
+.cedula_bottom_left:hover {
+    background-color: rgb(234, 113, 113);
+}
+
+.qtd_text {
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.cedula_bottom_right {
+    background-color: rgb(255, 255, 255);
+    height: 6vh;
+    width: 7vw;
+    margin-right: 2vh;
+    border: 2px solid rgba(210, 222, 233, 0.611);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plus_button {
+    background-color: transparent;
+    color: black;
+    font-size: 2.2vh;
+    width: 1vw;
+    display: flex;
+    border: none;
+    justify-content: center;
+}
+
+.plus_button:focus {
+    outline: none;
+}
+
+.quantity {
+    color: black;
+    font-size: 4vh
+}

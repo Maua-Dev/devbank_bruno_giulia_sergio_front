@@ -1,17 +1,16 @@
 .deposit_page {
-    height: 100%;
-    width: 100%;
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
     background-color: white;
+    height: 100%;
 }
 
 .left_box {
-    width: 600px;
-    height: 77px;
+    width: 28vw;
+    height: 8.5vh;
     background-color: rgba(0, 115, 230, 0.3);
     border-radius: 10px;
     margin: 10px;
@@ -19,20 +18,67 @@
     align-items: center;
 }
 
-.left_text {
+.left_box_text {
     margin: 10px;
-    font-size: 20px;
+    font-size: 2.5vh;
     font-weight: bold;
 }
 
 .deposit_top_box {
     background-color: rgba(0, 115, 230, 0.25);
-    width: 1312px;
-    height: 102px;
+    width: 84vw;
+    height: 11vh;
     border-radius: 10px;
-    position: absolute;
-    top: 140px;
+    position: relative;
+    margin-top: 16vh;
     display: flex;
     align-items: center;
+}
 
+.deposit_right_text {
+    font-size: 32px;
+    color: rgb(0, 115, 230);
+    font-weight: bold;
+}
+
+.deposit_middle {
+   position: relative;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.left_text {
+    color: black;
+    width: 24vw;
+    padding: 8vh;
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+
+.back_button {
+    background-color: rgb(110, 169, 228);
+    height: 6vh;
+    width: 8vw;
+    margin: 0.8vw;
+    font-size: 1.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+}
+
+.back_button:hover {
+    transform: scale(1.1);
+    background-color: rgb(234, 113, 113);
+}
+
+.deposit_bottom {
+    position: relative;
+    display: flex;
+    margin: 2vh;
+}
+
+.link_home {
+    text-decoration: none;
 }

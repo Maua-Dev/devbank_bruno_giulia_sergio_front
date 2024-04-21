@@ -7,6 +7,7 @@
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
 
     font-family: "Roboto", sans-serif;
 }
@@ -15,4 +16,5 @@
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    background-color: white;
 }
