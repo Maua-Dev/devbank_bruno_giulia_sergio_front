@@ -1,0 +1,112 @@
+.cotacoes_page {
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    background-color: white;
+    height: 100%;
+}
+
+.cotacoes_top_box {
+    background-color: rgba(136, 184, 232, 1);
+    position: relative;
+    margin-top: 18vh;
+    width: 88vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 3vh;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.back_button_cotacao {
+    background-color: rgba(0, 115, 230, 1);
+    height: 6vh;
+    width: 8vw;
+    margin: 0.8vw;
+    font-size: 1.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+    margin-bottom: 20%;
+}
+
+.back_button_cotacao:hover {
+    transform: scale(1.1);
+    background-color: rgb(234, 113, 113);
+}
+
+.cotacao_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form_cotacao {
+    width: 80%;
+    gap: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.input_cotacao {
+    border: 2px solid #0121414d;
+    border-radius: 10px;
+    width: 80vw;
+    height: 6vh;
+    padding: 10px;
+    background-color: #0073E64D;
+    text-align: center;
+    font-size: 150%;
+    color: black;
+    margin: 2vh;
+}
+
+.btn_cotacao {
+    background-color: rgb(110, 169, 228);
+    width: 200px;
+    height: 6vh;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+}
+
+.btn_cotacao:hover {
+    background-color: red;
+}
+
+.form_box {
+    background-color: rgba(136, 184, 232, 1);
+    position: relative;
+    height: 6vh;
+    width: 78%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 3vh;
+    font-weight: bold;
+    color: white;
+}
+
+.cotacaoAlert {
+    color: red;
+    margin-bottom: 2vh;
+    align-items: center;
+    display: flex;
+    gap: 10px
+}
+

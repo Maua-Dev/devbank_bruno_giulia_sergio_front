@@ -13,7 +13,8 @@ export default function Cedula({ valor }: Props) {
   return (
     <main>
       <div className="cedula">
-        <p className="valor">R$ {valor}</p>
+        <p className="RS_symbol">R$</p>
+        <p className="valor">{valor}</p>
       </div>
       <div className="cedula_bottom">
         <div className="cedula_bottom_left">
@@ -25,6 +26,9 @@ export default function Cedula({ valor }: Props) {
           <button className="plus_button" onClick={() => setTransacao( {...transacao, [valor as keyof TransacaoType] : transacao[valor as keyof TransacaoType]+1})}>+</button>
         </div>
       </div>
+      
+
     </main>
+    
   );
 }

@@ -3,18 +3,23 @@
     width: 18vw;
     height: 20vh;
     position: relative;
-    background-color: rgb(110, 169, 228);
-    border: 10px solid rgba(210, 222, 233, 0.611);
+    background-color: rgba(0, 115, 230, 0.3);
+    border: 10px solid rgba(198, 221, 243, 1);
     border-radius: 10px;
     justify-content: center;
     align-items: center;
     margin: 2vh;
     transition: 0.2s ease-in-out;
     margin-bottom: 1.2vh;
+    gap: 0.8vw;
+    color: white;
 }
 
+
+
+
 .cedula:hover {
-    background-color: rgb(234, 113, 113);
+    background-color: rgba(255, 14, 28, 0.3);
 }
 
 .valor {
@@ -27,6 +32,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: white;
 }
 
 .cedula_bottom_left {
@@ -42,12 +48,12 @@
 }
 
 .cedula_bottom_left:hover {
-    background-color: rgb(234, 113, 113);
+    background-color: rgba(255, 14, 28, 0.3);
 }
 
 .qtd_text {
     font-size: 3vh;
-    font-weight: bold;
+    color: rgba(0, 115, 230, 1);
 }
 
 .cedula_bottom_right {
@@ -79,4 +85,10 @@
 .quantity {
     color: black;
     font-size: 4vh
+}
+
+.RS_symbol {
+    font-size: 6vh;
+    font-weight: bold;
+    font-family: 'Cabin', sans-serif;
 }

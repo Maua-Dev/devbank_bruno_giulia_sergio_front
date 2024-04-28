@@ -1,0 +1,55 @@
+.transacaoCard {
+    background-color: rgba(0, 115, 230, 0.3);
+    height: 24vh;
+    width: 88vw;
+    color: black;
+    margin: 4vh;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.type {
+    height: 7vh;
+    width: 86vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh;
+    border-radius: 10px;
+    color: white;
+    font-size: 5vh;
+    
+}
+
+.transactionCard_middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+}
+
+.transactionCardMiddle_left {
+    display: flex;
+    flex-direction: column;
+    font-size: 4vh;
+    align-items: center;
+    color: rgba(0, 115, 230, 1);
+}
+
+.transactionCardMiddle_middle {
+    display: flex;
+    flex-direction: column;
+    font-size: 4vh;
+    align-items: center;
+    color: rgba(0, 115, 230, 1);
+}
+
+.transactionCardMiddle_right {
+    display: flex;
+    flex-direction: column;
+    font-size: 4vh;
+    align-items: center;
+    color: rgba(0, 115, 230, 1);
+}

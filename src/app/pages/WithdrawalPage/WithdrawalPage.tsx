@@ -3,7 +3,7 @@ import "./WithdrawalPage.css";
 import { ApiContext } from "../../contexts/api-context";
 import Header from "../../ui/components/Header";
 import { Link } from "react-router-dom";
-import axios from "axios";
+import axios, { isAxiosError } from "axios";
 import Cedula_Withdrawal from "./components/Cedula_Withdrawal";
 
 export default function DepositPage() {
@@ -11,6 +11,7 @@ export default function DepositPage() {
     useContext(ApiContext);
   const [quantidadeSacada, setQuantidadeSacada] = useState(0);
   const [alertVisibility, setAlertVisibility] = useState<boolean>(false);
+  const [error, setError] = useState<string>("");
 
   const handleCloseAlert = () => {
     setAlertVisibility(!alertVisibility);
@@ -32,10 +33,6 @@ export default function DepositPage() {
     
     console.log(quantidadeSacada);
     console.log(credito);
-    if (newQuantidadeSacada > credito) {
-      setAlertVisibility(!alertVisibility);
-    }
-
     setQuantidadeSacada(newQuantidadeSacada);
     axios
       .post(`${api}/withdraw`, transacao)
@@ -45,8 +42,10 @@ export default function DepositPage() {
         setCredito(response.data.current_balance);
       })
       .catch((error) => {
-        console.error(error);
-      });
+        if (isAxiosError(error))
+          setError(error.response?.data.detail);
+        setAlertVisibility(true);
+      })
 
     transacao[2] = 0;
     transacao[5] = 0;
@@ -93,7 +92,7 @@ export default function DepositPage() {
               </svg>
               <div className="errorMessage">
                 <h1>Erro</h1>
-                <p>Saldo Insuficiente para a transação</p>
+                <p>{error}</p>
               </div>
               <button className="closeAlert" onClick={handleCloseAlert}>
                 Ok

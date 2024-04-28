@@ -17,11 +17,13 @@
     background-color: white;
     width: fit-content;
     width: 16vw;
+    height: 12vh;
     border-radius: 10px;
     margin: 30vh;
     color: rgba(0, 115, 230, 1);
     font-size: 1vw;
     padding: 12px;
+    gap: 1vh;
 }
 
 .img {

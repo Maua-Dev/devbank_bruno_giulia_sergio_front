@@ -1,0 +1,56 @@
+.cotacao_card {
+    background-color: rgba(0, 115, 230, 0.3);
+    height: 24vh;
+    width: 88vw;
+    color: black;
+    margin: 4vh;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgba(0, 115, 230, 1);
+}
+
+.currency {
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+.conversao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cotacoesCardTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.flag_image {
+    border-radius: 4px;
+    height: 5vh;
+}
+
+.flag_position {
+    display: flex;
+    position: absolute;
+    left: 8%;
+    margin-top: 1%;
+}
+
+.cotacaoCardMiddle {
+    display: flex;
+    align-items: center;
+    font-size: 5vh;
+    gap: 10vw;
+}
+
+.valorCotacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

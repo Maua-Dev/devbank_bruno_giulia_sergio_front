@@ -44,13 +44,13 @@ export default function MainPage() {
         <Card Page="DepositPage" text="Depositar"></Card>
         <Card Page="WithdrawalPage" text="Sacar"></Card>
         <Card Page="Transacao" text="Transações"></Card>
+        <Card Page="Cotacoes" text="Câmbio"></Card>
       </div>
       <div>
-        <Link to={"/"}>
+        <Link to={"/"} className="link_home">
           <button className="button">Home</button>
         </Link>
       </div>
     </main>
   );
 }
-

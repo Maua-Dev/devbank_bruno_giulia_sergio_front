@@ -14,7 +14,8 @@ export default function Cedula_Withdrawal({ valor }: Props) {
   return (
     <main>
       <div className="cedula">
-        <p className="valor">R$ {valor}</p>
+        <p className="RS_symbol">R$</p>
+        <p className="valor">{valor}</p>
       </div>
       <div className="cedula_bottom">
         <div className="cedula_bottom_left">

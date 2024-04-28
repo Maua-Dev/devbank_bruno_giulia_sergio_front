@@ -1,11 +1,17 @@
 // import { FormEvent } from "react";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import "./LoginPage.css";
 import { Link } from "react-router-dom";
 import { ApiContext } from "../../contexts/api-context";
 
 export default function HomePage() {
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState<string>(() => {
+    return localStorage.getItem("inputValue") || "";
+  });
+
+  useEffect(() => {
+    localStorage.setItem("inputValue", inputValue);
+  }, [inputValue]);
 
   const { setApi } = useContext(ApiContext);
   const [alertVisibility, setAlertVisibility] = useState<boolean>(false);
@@ -55,13 +61,16 @@ export default function HomePage() {
           <input
             className="input"
             type="string"
+            value={inputValue}
             required
             placeholder="Coloque aqui o endpoint da sua API"
             onChange={(event) => setInputValue(event.target.value)}
           ></input>
+        </form>
+        <div>
           {/* Botão para validar a api (redireciona para HomePage) */}
           <ButtonLink></ButtonLink>
-        </form>
+        </div>
         <div>
           {alertVisibility && (
             <div className="error_box">

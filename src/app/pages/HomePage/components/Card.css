@@ -1,29 +1,36 @@
+
 button:hover {
     transform: scale(1);
 }
 
 .link_text {
-    font-size: 36px;
+    font-size: 250%;
     color: white;
     font-weight: bold;
 }
 
 .link {
     display: flex;
+    flex-direction: column;
     width: 16vw;
     height: 40vh;
     position: relative;
-    background-color: rgb(124, 174, 223);
+    background-color: rgba(136, 184, 232, 1);
     border: 10px solid rgba(210, 222, 233, 0.611);
     border-radius: 10px;
     justify-content: center;
     align-items: center;
-    margin: 80px;
+    margin: 2vw;
     transition: 0.2s ease-in-out;
     text-decoration: none;
+    gap: 2vh;
 }
 
 .link:hover {
     transform: scale(1.1);
+}
+
+.image {
+    width: 6vw;
 }
 

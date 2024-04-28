@@ -1,0 +1,49 @@
+.transacao_page {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    /* height: fit-content;
+    height: 100%; */
+}
+
+.transaction_top_box {
+    background-color: rgba(136, 184, 232, 1);
+    position: relative;
+    margin-top: 18vh;
+    height: 6vh;
+    width: 88vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 3vh;
+    font-weight: bold;
+    color: white;
+}
+
+.transacao_middle {
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.transacao_back_button {
+    background-color: rgba(0, 115, 230, 1);
+    height: 6vh;
+    width: 8vw;
+    margin: 0.8vw;
+    font-size: 1.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+    margin-bottom: 6vh;
+}
+
+.transacao_back_button:hover {
+    transform: scale(1.1);
+    background-color: rgb(234, 113, 113);
+}
+

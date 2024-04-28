@@ -18,11 +18,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 5vh;
 }
 
 .form {
     width: 50%;
-    gap: 8vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,46 +31,41 @@
 .logo {
     position: relative;
     width: 52vw;
-    top: -70px;
+
 }
 
 .input {
-    border: 2px solid #0121414d;
+    border: none;
     border-radius: 10px;
     width: 80vw;
     height: 9.5vh;
     padding: 10px;
     background-color: #0073E64D;
-    font-size: 36px;
     text-align: center;
-    font-size: 2.8em;
+    font-size: 2em;
     color: black;
 }
 
 .btn {
     background-color: rgba(0, 115, 230, 1);
-    width: 200px;
-    height: 64px;
-    cursor: pointer;
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 32px;
+    height: 9vh;
+    width: 12vw;
+    margin: 0.8vw;
+    font-size: 1.4vw;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
 }
 
 .btn:hover {
     background-color: red;
-    transform: scale(1.1);
-}
-
-.login_link {
-    text-decoration: none;
+    transform: scale(1.05);
 }
 
 input::placeholder {
-    color: rgb(95, 95, 193);
+    color: rgba(0, 115, 230, 1);
+    font-family: 'Cabin', sans-serif;
 }
 
 .alert {

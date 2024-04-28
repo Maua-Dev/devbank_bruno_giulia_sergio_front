@@ -4,7 +4,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import DepositPage from "./pages/DepositPage/DepositPage";
 import WithdrawalPage from "./pages/WithdrawalPage/WithdrawalPage";
 import Transacao from "./pages/Transacao/Transacao";
-
+import CotacoesPage from "./pages/CotacoesPage/CotacoesPage"
 
 export default function AppRouter() {
     return (
@@ -15,6 +15,7 @@ export default function AppRouter() {
                 <Route path='/HomePage/DepositPage' element={<DepositPage />}/>
                 <Route path='/HomePage/WithdrawalPage' element={<WithdrawalPage />}/>
                 <Route path='/HomePage/Transacao' element={<Transacao />} />
+                <Route path='/HomePage/Cotacoes' element={<CotacoesPage />}></Route>
             </Routes>
         </BrowserRouter>
     )
